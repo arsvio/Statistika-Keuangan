@@ -1,0 +1,20 @@
+presentvalue <- function(pilih, A, t, im, m = TRUE){
+  # satu: bunga tunggal
+  # dua: bunga majemuk nominal
+  # tiga: bunga majemuk kontinu
+ 
+  switch(pilih, 
+         satu = {
+           pv = A/(1+im*t)
+           cat("Nilai pv bunga tunggal: ", pv)
+         },
+         dua = {
+           pv = A*(1+im/m)^(-m*t)
+           cat("Nilai pv bunga majemuk nominal: ", pv)
+         },
+         tiga = {
+           pv = A*exp(-im*t)
+           cat("Nilai pv bunga kontinu: ", pv)
+         }
+  )
+}
