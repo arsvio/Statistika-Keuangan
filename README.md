@@ -1,3 +1,3 @@
 # Statistika-Keuangan
 
-Menentukan nilai akumulasi, present value, dan bunga menggunakan R
+Kumpulan kode program dalam bahasa R untuk mata kuliah Pengantar Statistika Keuangan
