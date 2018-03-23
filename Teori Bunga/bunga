@@ -1,0 +1,19 @@
+bunga <- function(pilih, A, k, t, m = TRUE){
+  # satu: bunga tunggal
+  # dua: bunga majemuk nominal
+  # tiga: bunga majemuk kontinu
+  switch(pilih, 
+         satu = {
+           bb = (A/k-1)/t
+           cat("Bunga tunggal: ", bb)
+         },
+         dua = {
+           bb = ((A/k)^(1/(m*t))-1)*m
+           cat("Bunga majemuk nominal: ", bb)
+         },
+         tiga = {
+           bb = log(A/k)/t
+           cat("Bunga kontinu: ", bb)
+         }
+  )
+}
